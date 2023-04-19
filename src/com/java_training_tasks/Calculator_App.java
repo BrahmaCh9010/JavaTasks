@@ -9,7 +9,6 @@ public class Calculator_App {
 		Scanner sc = new Scanner(System.in);
 		double num1;
 		double num2;
-		while(true) {
 			System.out.println("1. Addition");
 			System.out.println("2. Subtraction");
 			System.out.println("3. Multiplication");
@@ -28,7 +27,7 @@ public class Calculator_App {
 				System.out.println("Enter Second Number : ");
 				num2 = sc.nextDouble();
 				double sum = num1 + num2;
-				System.out.println("Result : "+sum);
+				System.out.println("Addition Result : "+sum);
 				break;
 			}
 			case 2: {
@@ -37,7 +36,7 @@ public class Calculator_App {
 				System.out.println("Enter Second Number : ");
 				num2 = sc.nextDouble();
 				double sub = num1 - num2;
-				System.out.println("Result : "+sub);
+				System.out.println("Subtraction Result : "+sub);
 				break;
 			}
 			case 3: {
@@ -46,7 +45,7 @@ public class Calculator_App {
 				System.out.println("Enter Second Number : ");
 				num2 = sc.nextDouble();
 				double mul = num1 * num2;
-				System.out.println("Result : "+mul);
+				System.out.println("Multiplication Result : "+mul);
 				break;
 			}
 			case 4: {
@@ -58,7 +57,7 @@ public class Calculator_App {
 					System.out.println("Not divsible by 0");
 				} else {
 					double div = num1 / num2;
-					System.out.println("Result : "+div);
+					System.out.println("Division Result : "+div);
 				}
 				break;
 			}
@@ -68,7 +67,7 @@ public class Calculator_App {
 				System.out.println("Enter Second Number : ");
 				num2 = sc.nextDouble();
 				double mod = num1 % num2;
-				System.out.println("Result : "+mod);
+				System.out.println("Modulus Result : "+mod);
 				break;
 			}
 			case 6: {
@@ -77,7 +76,7 @@ public class Calculator_App {
 				System.out.println("Enter Second Number : ");
 				num2 = sc.nextDouble();
 				double pow = Math.pow(num1, num2); 
-				System.out.println("Result : "+pow);
+				System.out.println("Square root Result : "+pow);
 				break;
 			}
 			case 7: {
@@ -100,6 +99,4 @@ public class Calculator_App {
 				break;
 			}
 		}
-	}
-
 }
